@@ -10,11 +10,12 @@ public:
 	node(const node* const other);
 	void upd();
 
-	pair<node*, node*> cut(int i, int j);
-	node* paste(node* v, int idx);
-	int get(node* v, int idx);
-	node* append(int x);
-	void print();
+	pair<node*, node*> cut(int i, int j) const;
+	node* paste(node* v, int idx) const;
+	int get(int idx) const;
+	node* set(int val, int idx) const;
+	node* append(int x) const;
+	void print() const;
 };
 
 node::node(int v) {
